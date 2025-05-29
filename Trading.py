@@ -87,7 +87,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
                  InlineKeyboardButton("❌ خسارة", callback_data="lose")]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
-            await query.edit_message_caption(caption=f"🔔 إشارة اليوم: {signal}
+            await query.edit_message_caption(caption=f"🔔 إشارة اليوم: {signal}"
 💵 المبلغ: ${amount}", reply_markup=reply_markup)
     elif data == "win":
         user_data[user_id]["wins"] += 1
